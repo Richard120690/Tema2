@@ -1,31 +1,23 @@
-def contar_caracteres(arg="La frase 'Aprender Python es divertido' tiene"):
+def contar_caracteres(frase):
 
-    arg1=arg[8:38]
-
-
-    #print(arg1)
-
-    longitud=len(arg1)
-
-    print(arg,longitud,"caracteres\n")
+    longitud=len(frase)
 
 
-contar_caracteres()
+    print(frase, "tiene", longitud, "caracteres")
 
 
-def convertir_numero(num1):
+contar_caracteres("La frase 'Aprender Python es divertido'")
 
 
-    numeroSt= str(num1)
-    numeroFlo=float(num1)
+def convertir_numero (num):
 
+    numc=str(num)
+    numf=float(num)
 
-    print("Entero",num1, type(num1),"\n")
-    print("Cadena",numeroSt, type(numeroSt),"\n")
-    print("Flotante",numeroFlo, type(numeroFlo))
+    print("Entero:" , num , "Tipo:",type(num))
+    print("Cedena:" , numc , "Tipo:",type(numc))
+    print("Flotante:" , numf , "Tipo:",type(numf))
 
 
 convertir_numero(42)
-
-
 
